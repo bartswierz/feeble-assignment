@@ -1,11 +1,11 @@
-import Apple from "../../assets/icons/apple.svg";
 import TextBubble from "../../assets/icons/text-bubble.svg";
+import CallToActionBtns from "./CallToActionBtns";
 
 const Hero = () => {
   return (
     <div className="max-w-[736px] w-full mx-auto flex flex-col items-center gap-8 mt-[44px]">
       <div className="flex flex-col text-center items-center gap-6 max-w-[90vw] mb-12">
-        <div className="flex items-center pt-1 px-2 pb-[5px] font-medium text-[16px] text-brand-blue bg-white rounded-full">
+        <div className="flex items-center pt-1 px-2 pb-[5px] font-medium text-[16px] text-brand-blue bg-white rounded-full shadow-[0_2px_8px_rgba(0,0,0,0.1)]">
           <img src={TextBubble} alt="Text Icon" className="inline-block mr-2" />
           #1 iMessage Automation Tool
         </div>
@@ -20,18 +20,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* CTA Buttons */}
-      <div className="flex gap-2 mb-[54px]">
-        <button className="flex max-w-[136px] w-full py-3 px-5 bg-brand-blue text-white cursor-pointer rounded-full items-center justify-center">
-          Get Started
-        </button>
-
-        <button className="flex border-[#6C788F] border-[0.7px] rounded-full py-3 pl-5 pr-8 items-center gap-3 cursor-pointer">
-          <img src={Apple} alt="Apple Icon" />
-          <div className="h-[18px] p-[0.5px] bg-[#6C788F]" />
-          <span className="whitespace-nowrap">Download the Mac app</span>
-        </button>
-      </div>
+      <CallToActionBtns />
     </div>
   );
 };
