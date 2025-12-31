@@ -11,7 +11,7 @@ export const Menu = () => {
   const linkList = ["How It Works", "Pricing", "Use Case", "FAQ"];
 
   return (
-    <nav className="flex h-20.25 justify-between items-center  mt-10 py-5 pl-6 pr-5 bg-white rounded-full shadow-[0_4px_12px_rgba(12,12,13,0.05)] xl:max-w-[1200px] max-w-[95vw] mx-auto border">
+    <nav className="flex h-20.25 justify-between items-center  mt-10 py-5 pl-6 pr-5 bg-white rounded-full shadow-[0_4px_12px_rgba(12,12,13,0.05)] xl:max-w-[1200px] max-w-[95vw] mx-auto">
       <img src={BrandLogo} alt="Logo" />
 
       <NavigationLinks links={linkList} />
