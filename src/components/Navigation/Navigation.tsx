@@ -14,8 +14,10 @@ export const Menu = () => {
 
       <ul className="hidden md:flex text-[#8c97a8] gap-x-4">
         {items.map((item, index) => (
-          <li key={index} className="px-3 py-2 text-[16px] font-medium">
-            <Link to={`${slugify(item)}`}>{item}</Link>
+          <li key={index}>
+            <Link to={`${slugify(item)}`} className="px-3 py-2 text-[16px] font-medium hover:text-black cursor-pointer">
+              {item}
+            </Link>
           </li>
         ))}
       </ul>
@@ -30,15 +32,19 @@ export const Menu = () => {
 
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="absolute top-[81px] left-0 w-full bg-white shadow-md z-10 flex flex-col items-center py-4 md:hidden shadow-[rgba(12,12,13,0.5)]">
+        <div className="absolute top-[102px] left-0 w-full bg-white shadow-md z-10 flex flex-col items-center py-4 md:hidden shadow-[rgba(12,12,13,0.5)]">
           <ul className="w-full flex flex-col items-center text-[#8c97a8] gap-y-4">
             {items.map((item, index) => (
-              <li key={index} className="w-full text-center px-3 py-2 text-[16px] font-medium border-b border-gray-200">
-                <Link to={`${slugify(item)}`}>{item}</Link>
+              <li key={index} className="w-full text-center text-[16px] font-medium border-b border-gray-200">
+                <Link to={`${slugify(item)}`} className="px-3 py-2 hover:text-black cursor-pointer">
+                  {item}
+                </Link>
               </li>
             ))}
-            <li className="w-full text-center px-3 py-2 text-[16px] font-medium border-b border-gray-200">
-              <Link to="contact">Contact Sales</Link>
+            <li className="w-full text-center text-[16px] font-medium border-b border-gray-200">
+              <Link to="contact" className="px-3 py-2 hover:text-black ">
+                Contact Sales
+              </Link>
             </li>
           </ul>
         </div>

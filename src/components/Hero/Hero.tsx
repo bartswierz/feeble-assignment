@@ -3,7 +3,7 @@ import TextBubble from "../../assets/icons/text-bubble.svg";
 
 const Hero = () => {
   return (
-    <div className="max-w-[736px] w-full mx-auto flex flex-col items-center gap-8 mt-[44px] border-4">
+    <div className="max-w-[736px] w-full mx-auto flex flex-col items-center gap-8 mt-[44px]">
       <div className="flex flex-col text-center items-center gap-6">
         <div className="flex items-center pt-1 px-2 pb-[5px] text-brand-blue font-medium text-[16px]">
           <img src={TextBubble} alt="Text Icon" className="inline-block mr-2" />
