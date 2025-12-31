@@ -38,6 +38,7 @@ function App() {
 
       <BirdGroup />
       <Clouds />
+
       <BirdDiagonalLTR src={BirdOffScreen} width={133} height={74} delayMs={1200} />
       <BirdDiagonalRTL src={BirdOffScreen} width={133} height={74} delayMs={1200} />
     </div>

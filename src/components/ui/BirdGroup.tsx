@@ -5,8 +5,7 @@ const BirdGroup = () => {
   const [show, setShow] = useState(false); // Bird animation control
 
   useEffect(() => {
-    // const t = window.setTimeout(() => setShow(true), 800); // delay 800ms
-    const t = window.setTimeout(() => setShow(true), 100); // delay 800ms
+    const t = window.setTimeout(() => setShow(true), 800); // delay 800ms
     return () => window.clearTimeout(t);
   }, []);
 
@@ -26,9 +25,9 @@ const BirdGroup = () => {
       style={{
         transform: show
           ? "translateY(0px)" // in view
-          : "translateY(120vh)", // start off-screen (below)
+          : "translateY(80vh)", // start off-screen (below)
         transitionProperty: "transform",
-        transitionDuration: "3500ms",
+        transitionDuration: "1000ms",
         transitionTimingFunction: "cubic-bezier(0.73, 0, 0.8, 0.83)",
       }}
     />

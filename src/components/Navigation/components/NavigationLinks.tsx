@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { slugify } from "../../utils/slugify";
+import { slugify } from "../../../utils/slugify";
 
 interface NavigationLinksProps {
   links: string[];

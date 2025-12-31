@@ -1,9 +1,9 @@
-import Apple from "../../assets/icons/apple.svg";
+import Apple from "../../../assets/icons/apple.svg";
 
 const CallToActionBtns = () => {
   return (
-    <div className="flex gap-2 mb-[54px]">
-      <button className="flex max-w-[136px] w-full py-3 px-5 bg-brand-blue text-white cursor-pointer rounded-full items-center justify-center">
+    <div className="flex flex-col sm:flex-row gap-2 mb-[54px] items-center">
+      <button className="flex md:max-w-[136px] w-full py-3 px-5 bg-brand-blue text-white cursor-pointer rounded-full items-center justify-center">
         Get Started
       </button>
 
