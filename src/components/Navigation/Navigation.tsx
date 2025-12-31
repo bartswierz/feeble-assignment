@@ -17,7 +17,7 @@ export const Menu = () => {
       <NavigationLinks links={linkList} />
 
       <button className="hidden md:flex items-center justify-center w-full max-w-[138px] h-[41px] font-medium text-[16px] px-[18px] py-[11px] rounded-full cursor-pointer nav-btn">
-        <Link to="contact" className="whitespace-nowrap">
+        <Link to="/" className="whitespace-nowrap">
           Contact Sales
         </Link>
       </button>

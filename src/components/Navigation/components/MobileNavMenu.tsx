@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { slugify } from "../../../utils/slugify";
+// import { slugify } from "../../../utils/slugify";
 
 interface MobileNavMenuProps {
   links: string[];
@@ -11,7 +11,7 @@ const MobileNavMenu = ({ links = [] }: MobileNavMenuProps) => {
       <ul className="w-full flex flex-col items-center text-[#8c97a8] gap-y-4">
         {links.map((item, index) => (
           <li key={index} className="w-full text-center text-[16px] font-medium border-b border-gray-200">
-            <Link to={`${slugify(item)}`} className="px-3 py-2 hover:text-black cursor-pointer">
+            <Link to="/" className="px-3 py-2 hover:text-black cursor-pointer">
               {item}
             </Link>
           </li>
