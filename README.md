@@ -4,6 +4,9 @@ Feeble.io - Assignment - Bartosz Swierzynski
 
 1. [Overview](#overview)
 2. [Installation Instructions](#installation-instructions)
+3. [Tech Stack](#tech-stack)
+4. [Assumptions](#assumptions)
+5. [If I Had More Time](#if-i-had-more-time)
 
 ## Overview
 
@@ -56,7 +59,7 @@ You're all set!
 - For the responsiveness, I added breakpoints for 300-1280px+ screens(300-768, 768, 1024, 1280+). Unfortunately I can only put in so many hours for this but there are definitely sections I could further iterate on to ensure its the best looking it can be such as iterating more on the clouds and bird positions by adding separate images for each breakpoint, this would make a cleaner design. The text sizes were also updated at certain breakpoints to make it easier to read and fit better when scaling down to a small phone screen of around 300-500px. The text sizes can be further fine tuned.
 - For the diagonal birds, I wasn't able to download the bird image so I used a similar bird from the figma file and flipped the svg image to imitate that same motion.
 
-## What I would do if I had more time
+## If I Had More Time
 - I always strive to do the best work I can do and I enjoy taking figma designs and bringing it to life with code however with the limited time I had, I believe I could do better with cleaning up certain sections to ensure its the best design on all screen sizes. But for the main intended screen of a desktop, I believe my design does match the figma design well.
 - Spend more time refactoring certain sections and creating a cleaner design system to be more reusable and less redunant on certain sections(i.e. instead of manually writing a color code from Figma, it would make more sense to create it in a css variable before building out the UI. This way, a design system is in place at the beginning which makes it easier to continue working on a project as it scales overtime. Another section I would update too would be further optimizing some of the react components such as the navigation links for desktop and mobile.
 - As there was no real logic needed to be collected from the user, it didn't make sense to create tests, but if there was, I would have definitely used Vitest and made a few for the buttons and forms(if they were in the design) to ensure the data is being collected and stored correctly. I do believe its important to have tests inplace, with at least a few unit tests, and preferrably an end-to-end test as the app grows larger. It is great to have a safety net in place as you try to quickly iterate and add new features to an app, it is very easy to overlook a small logical change that could break a different section of the app, having this in place gives you quick feedback to allow you to continue moving forward.
