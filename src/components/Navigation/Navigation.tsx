@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { slugify } from "../../utils/slugify";
-import Logo from "../../assets/logo.svg";
+import BrandLogo from "../../assets/icons/brand-logo.svg";
 import HamburgerBtn from "./HamburgerBtn";
 import { useState } from "react";
 
@@ -9,8 +9,8 @@ export const Menu = () => {
 
   const items = ["How It Works", "Pricing", "Use Case", "FAQ"];
   return (
-    <nav className="flex h-[81px] justify-between items-center max-w-[1200px] w-full mx-auto py-5 pl-6 pr-5">
-      <img src={Logo} alt="Logo" />
+    <nav className="flex h-[81px] justify-between items-center max-w-[1200px] w-full mx-auto mt-10 py-5 pl-6 pr-5 bg-white rounded-full shadow-[0_4px_12px_rgba(12,12,13,0.05)]">
+      <img src={BrandLogo} alt="Logo" />
 
       <ul className="hidden md:flex text-[#8c97a8] gap-x-4">
         {items.map((item, index) => (
@@ -30,7 +30,7 @@ export const Menu = () => {
 
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="absolute top-[81px] left-0 w-full bg-white shadow-md z-10 flex flex-col items-center py-4 md:hidden">
+        <div className="absolute top-[81px] left-0 w-full bg-white shadow-md z-10 flex flex-col items-center py-4 md:hidden shadow-[rgba(12,12,13,0.5)]">
           <ul className="w-full flex flex-col items-center text-[#8c97a8] gap-y-4">
             {items.map((item, index) => (
               <li key={index} className="w-full text-center px-3 py-2 text-[16px] font-medium border-b border-gray-200">
@@ -38,8 +38,8 @@ export const Menu = () => {
               </li>
             ))}
             <li className="w-full text-center px-3 py-2 text-[16px] font-medium border-b border-gray-200">
-                <Link to="contact">Contact Sales</Link>
-              </li>
+              <Link to="contact">Contact Sales</Link>
+            </li>
           </ul>
         </div>
       )}

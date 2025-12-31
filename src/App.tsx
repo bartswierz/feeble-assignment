@@ -1,57 +1,46 @@
 import Navigation from "./components/Navigation/Navigation";
 import Hero from "./components/Hero/Hero";
-import HeroBg from "./assets/heroBg.svg";
-import CloudBg from "./assets/cloudsBg.svg";
+import Birds from "./assets/backgrounds/birds.svg";
+import Clouds from "./assets/backgrounds/clouds.svg";
+import CallToAction from "./components/CallToAction/CallToAction";
 
 function App() {
   return (
-    <div className="border max-w-[1920px] max-h-[1080px] h-full mx-auto">
+    <div className="mx-auto max-w-[1920px] w-full overflow-hidden relative h-full">
       <Navigation />
+
+      {/* Hero region needs to be relative */}
+      {/* <div> */}
       <Hero />
-      {/* <div className="fixed max-w-[1407px] w-full border top-[291px] left-[298px] right-0 mx-auto z-[-1]">
-        <img src={HeroBg} alt="Hero Background" className="flex w-full mt-10" />
-      </div> */}
-      {/* <div className="pointer-events-none fixed inset-0 -z-10">
+
+      {/* Background layers anchored to 1920 container */}
+      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+        {/* Birds (HeroBg) */}
         <img
-          src={HeroBg}
-          alt=""
+          src={Birds}
+          alt="Birds Flying"
           aria-hidden="true"
           className="
-            absolute
-            top-[291px]
-            left-1/2
-            w-[1407px]
-            max-w-none
-            -translate-x-1/2
-            md:translate-x-[-calc(50%-298px)]
-            object-contain
-          "
-        />
-      </div> */}
-      {/* Birds Backgrounds */}
-      <div
-        aria-hidden="true"
-        className="
-          pointer-events-none fixed inset-0 -z-10
-          bg-no-repeat
-          bg-[length:1407px_auto]
-          bg-[position:left_298px_top_291px]
-          md:bg-[position:left_298px_top_291px]
-          bg-[image:url('/src/assets/heroBg.svg')]
-        "
-      />
+              absolute
+              w-[1407.935px] h-[719.378px]
+              top-[291px] left-[298.18px]
+              max-w-none
+              transition-transform duration-900 ease-out
 
-      {/* Clouds Backgrounds */}
-      <div
-        aria-hidden="true"
-        className="
-          border-2 pointer-events-none fixed inset-0 -z-1
-          bg-no-repeat
-          bg-[length:1920px_auto]
-          bg-[position:left_298px_top_291px]
-          bg-[image:url('/src/assets/cloudsBg.svg')]
-        "
-      />
+            "
+        />
+
+        {/* Clouds (bottom) */}
+        <img
+          src={Clouds}
+          alt="Clouds"
+          className="
+              absolute bottom-0 left-1/2
+              w-full max-w-[1920px] z-1
+            "
+        />
+      </div>
+      <CallToAction />
     </div>
   );
 }

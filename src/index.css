@@ -4,4 +4,12 @@
   --color-brand-blue: #007aff;
   --color-hero-text: #1d2026;
   --color-menu-text: #8c97a8;
+  --color-background: #e5f1ff;
+  /* --color-background: #eee; */
+}
+
+html,
+body {
+  background-color: var(--color-background);
+  margin: 0;
 }
