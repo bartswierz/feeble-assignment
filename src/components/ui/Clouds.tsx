@@ -12,7 +12,6 @@ const Clouds = () => {
 
   return (
     <div className="max-w-480 h-full relative sm:mt-10">
-      {/* <img src={CloudsSVG} alt="Clouds" className="w-full max-w-480 z-0" /> */}
       <img
         src={CloudsSVG}
         alt="Clouds"

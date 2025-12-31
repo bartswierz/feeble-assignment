@@ -5,7 +5,6 @@
   --color-hero-text: #1d2026;
   --color-menu-text: #8c97a8;
   --color-background: #e5f1ff;
-  /* --color-background: #f0f444; */
 }
 
 @font-face {
@@ -42,17 +41,12 @@ body {
 .nav-btn {
   position: relative;
   overflow: hidden;
-
+  color: white;
   padding: 12px 24px;
   border-radius: 9999px;
-
   font-size: 16px;
   font-weight: 500;
 
-  /* TEXT */
-  color: white;
-
-  /* BACKGROUND */
   background-image: linear-gradient(to right, white 50%, var(--color-brand-blue) 50% /* blue */);
   background-size: 200% 100%;
 

@@ -10,7 +10,6 @@ const Hero = () => {
           #1 iMessage Automation Tool
         </div>
 
-        {/* <div className="font-bold text-[64px] leading-[120%]"> */}
         <div className="font-bold text-[44px] md:text-[56px]x md:text-[64px] lg:text-[64px]x leading-[120%]">
           <span className="text-brand-blue">iMessage</span> Automation for Teams and AI Workflows.
         </div>
